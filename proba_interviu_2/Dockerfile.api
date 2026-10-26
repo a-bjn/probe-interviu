@@ -1,0 +1,14 @@
+FROM node:24-bookworm-slim
+
+WORKDIR /app
+COPY api/package.json api/package-lock.json ./
+RUN npm ci
+COPY api/tsconfig.json ./
+COPY api/src ./src
+
+ENV PORT=3001
+ENV HOST=0.0.0.0
+ENV HABIT_DB=/data/habit.db
+EXPOSE 3001
+
+CMD ["node", "src/index.ts"]
