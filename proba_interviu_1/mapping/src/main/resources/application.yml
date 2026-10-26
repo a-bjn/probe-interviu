@@ -1,0 +1,22 @@
+spring:
+  main:
+    banner-mode: off
+    log-startup-info: false
+    web-application-type: none
+
+logging:
+  level:
+    root: WARN
+
+mapping:
+  products: ../supplier_products.csv
+  categories: ../our_categories.csv
+  labels: ../labelled_products.csv
+  sales: ../sales.csv
+  output: ../out/category_mapping.csv
+  report: ../out/mistake_cost.csv
+  holdout-fraction: 0.2
+  seed: 19
+  margin-threshold: 0.15
+  pack-kilograms: 5
+  pack-litres: 5
