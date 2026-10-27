@@ -30,6 +30,9 @@ On macOS/Linux: `mapping/mvnw -f mapping/pom.xml test`.
 
 `out/` is generated locally and not committed. You can attach a screenshot of `mvn test` / job summary like the sample in this README on GitHub.
 
+<img width="814" height="239" alt="image" src="https://github.com/user-attachments/assets/afd07154-c453-46cc-b1be-660742431f1b" />
+
+
 #### 2. Half a page covering what you did, how you verified it, and what you deliberately did not do.
 
 A supplier category, ignoring case and extra spaces, gets one of our ids. Each product votes with its revenue: its training label, or else a multinomial Naive Bayes guess from the name, the brand, and the supplier category. The name is counted twice, because a house brand spans many of our categories and was outvoting the product name. The id with the most revenue wins; a tie goes to the smaller id. Flour, sugar, dried pasta, rice, and cooking oil are split per product at 5 kg or 5 litres, and a pack we cannot read stays put. Dump names such as `misc`, `assorted`, and `new lines` do not use their own name as a feature.
