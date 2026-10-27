@@ -5,8 +5,6 @@
 | [proba_interviu_1](proba_interviu_1/) | Map supplier categories to our category ids (Java CLI job) |
 | [proba_interviu_2](proba_interviu_2/) | Habit tracker API (Fastify) and UI (Next.js) |
 
-**Repository:** push this repo to GitHub and send the link. Step-by-step run instructions for a clean machine are below for each task.
-
 ---
 
 # Evidence
